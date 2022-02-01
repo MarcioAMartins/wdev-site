@@ -3,8 +3,10 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from '@/pages/Home';
+import Home from   '@/pages/Home';
 import Videos from '@/pages/Videos';
+import Sobre from '@/pages/Sobre';
+import Contato from '@/pages/Contato';
 
 const routes = [
     {
@@ -14,7 +16,15 @@ const routes = [
     {
         path:'/videos',
         component:Videos
-    }
+    },
+    {
+        path:'/sobre',
+        component:Sobre
+    },
+    {
+        path:'/Contato',
+        component:Contato
+    },
 ];
 
 const router = new VueRouter({
